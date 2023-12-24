@@ -20,10 +20,17 @@ The project is a classic snake game created in C++ using Object-Oriented Design 
 - Used GNU debugger to resolve bugs within program
 
 ### Getting Started
-- Clone the repository and run the command `.\Project.exe` within terminal with the provided Project.exe file
+Clone the repository and run the command `.\Project.exe` within terminal with the provided Project.exe file
 
   **OR**
-- Build the program. Ensure proper setup of GCC compiler then run the commands `make` to create the .exe file, then `.\Project.exe` to run the program within terminal.
+
+To edit and build the program: 
+  1. Ensure proper setup of GCC compiler
+  2. Configure makefile and MacUILib.h. Current configuration is for Windows. To run on Mac:
+     - Uncomment line 5 in makefile, the POSTLINKER
+     - Comment out line 4 and uncomment line 5 in MacUILib.h
+  4. Run the command `make` within project directory to create the .exe file
+  5. Run the command `.\Project.exe` within terminal to run the program.
 
 ### Acknowledgments
 This project was created for COMPENG 2SH4
